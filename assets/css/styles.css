@@ -88,6 +88,9 @@ ul, ol { list-style: none; }
 .hero h1 { color: #fff; }
 .hero__lead { font-size: 19px; color: #fff; opacity: .9; max-width: 540px; }
 .hero__actions { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 8px; }
+.hero__link { display: inline-flex; align-items: center; gap: 6px; color: #fff; font-weight: 500; text-decoration: none; align-self: flex-start; border-bottom: 1px solid rgba(255, 255, 255, .5); padding-bottom: 2px; }
+.hero__link:hover { border-color: #fff; }
+.hero__link .ms { font-size: 18px; }
 .hero__note { font-size: 13px; color: #fff; opacity: .75; }
 .hero__art { flex: none; width: min(520px, 42vw); border-radius: 24px; background: rgba(255, 255, 255, .08); padding: 10px; }
 
