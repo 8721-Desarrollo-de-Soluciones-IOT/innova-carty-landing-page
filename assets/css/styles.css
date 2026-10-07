@@ -62,12 +62,15 @@ ul, ol { list-style: none; }
   .lang button:hover { color: var(--primary); }
   .store:hover { background: var(--primary); transform: translateY(-2px); box-shadow: 0 6px 16px rgba(16, 42, 67, .18); }
   .faq summary:hover { color: var(--primary); }
+  .chip--glass:hover { background: rgba(255, 255, 255, .25); transform: translateY(-2px); }
+  .chip--glass:hover .ms { color: var(--warning); }
 }
 
 .card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow); }
 .chip { display: inline-flex; align-items: center; gap: 4px; height: 28px; padding: 0 12px; border-radius: 14px; font: 500 13px var(--font-body); align-self: flex-start; }
 .chip .ms { font-size: 16px; }
-.chip--glass { background: rgba(255, 255, 255, .15); color: #fff; }
+.chip--glass { background: rgba(255, 255, 255, .15); color: #fff; transition: background-color .2s, transform .2s; }
+.chip--glass .ms { transition: color .2s; }
 .chip--info { background: var(--primary-container); color: var(--primary); }
 .chip--ok { background: var(--secondary-container); color: var(--secondary); }
 .tile { width: 48px; height: 48px; flex: none; border-radius: 14px; background: var(--primary-container); color: var(--primary); display: flex; align-items: center; justify-content: center; }
