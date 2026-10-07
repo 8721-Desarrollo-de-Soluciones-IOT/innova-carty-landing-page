@@ -69,7 +69,32 @@
           <p class="hero__note" data-i18n="hero.note">Los compradores descargan la app · Los supermercados reservan un piloto</p>
         </div>
         <div class="hero__art">
-          <img src="assets/img/hero-cart.svg" width="400" height="310" alt="Ilustración de un carrito inteligente con pantalla, código QR y barra de presupuesto" data-i18n-alt="hero.alt">
+          <!-- Animated purchase: three products drop in, the cart reads them, the total grows and the shopper pays with QR -->
+          <svg class="cart-anim" viewBox="0 0 400 310" width="400" height="310" fill="none" role="img" aria-labelledby="hero-art-title">
+            <title id="hero-art-title" data-i18n="hero.alt">Animación de un carrito inteligente que lee los productos, suma el total y muestra el QR de pago</title>
+            <g class="cart-anim__item cart-anim__item--1"><rect x="168" y="176" width="26" height="38" rx="3" fill="#fff"/><rect x="168" y="190" width="26" height="12" fill="#004F8C"/></g>
+            <g class="cart-anim__item cart-anim__item--2"><rect x="219" y="164" width="10" height="10" rx="2" fill="#7EE2B8"/><rect x="214" y="172" width="20" height="42" rx="6" fill="#009E60"/></g>
+            <g class="cart-anim__item cart-anim__item--3"><rect x="252" y="184" width="38" height="30" rx="3" fill="#F5D07A"/><rect x="252" y="194" width="38" height="6" fill="#fff" opacity=".7"/></g>
+            <path d="M30 60h50l40 160h190l40-120H100" stroke="#fff" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle class="cart-anim__wave cart-anim__wave--1" cx="225" cy="120" r="70" stroke="#7EE2B8" stroke-width="4"/>
+            <circle class="cart-anim__wave cart-anim__wave--2" cx="225" cy="120" r="70" stroke="#7EE2B8" stroke-width="4"/>
+            <circle class="cart-anim__wave cart-anim__wave--3" cx="225" cy="120" r="70" stroke="#7EE2B8" stroke-width="4"/>
+            <rect x="150" y="70" width="150" height="100" rx="12" fill="#fff"/>
+            <rect x="162" y="82" width="70" height="10" rx="5" fill="#004F8C"/>
+            <rect x="162" y="100" width="50" height="22" rx="4" fill="#009E60"/>
+            <rect x="244" y="82" width="44" height="44" rx="4" fill="#102A43"/>
+            <g class="cart-anim__qr"><rect x="250" y="88" width="12" height="12" fill="#fff"/><rect x="270" y="88" width="12" height="12" fill="#fff"/><rect x="250" y="108" width="12" height="12" fill="#fff"/><rect x="270" y="108" width="12" height="12" fill="#7EE2B8"/></g>
+            <rect x="162" y="134" width="126" height="10" rx="5" fill="#D9E2EC"/>
+            <rect class="cart-anim__budget" x="162" y="134" width="126" height="10" rx="5"/>
+            <text class="cart-anim__price cart-anim__price--1" x="312" y="62">+S/ 4.90</text>
+            <text class="cart-anim__price cart-anim__price--2" x="312" y="62">+S/ 23.50</text>
+            <text class="cart-anim__price cart-anim__price--3" x="312" y="62">+S/ 12.90</text>
+            <g class="cart-anim__paid"><circle cx="298" cy="72" r="16" fill="#009E60" stroke="#fff" stroke-width="3"/><path d="M290 72l6 6 10-11" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></g>
+            <circle cx="140" cy="262" r="20" fill="#fff"/><circle cx="290" cy="262" r="20" fill="#fff"/>
+          </svg>
+          <div class="hero__card hero__card--1" aria-hidden="true"><span class="ms">nfc</span> <span data-i18n="hero.card1">RFID: Leche entera 1 L</span></div>
+          <div class="hero__card hero__card--2" aria-hidden="true"><span class="ms">scale</span> <span data-i18n="hero.card2">Peso verificado</span></div>
+          <div class="hero__card hero__card--3" aria-hidden="true"><span class="ms">qr_code_2</span> <span data-i18n="hero.card3">Total S/ 41.30 · paga con QR</span></div>
         </div>
       </div>
     </section>
